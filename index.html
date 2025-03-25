@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livingston's Construction</title>
+    <meta name="description" content="Livingston's Construction offers high-quality construction services, including drywall installation, remodeling, painting, and more. Contact us today!">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="sticky-header">
+        <div class="container" id="header-content">
+            <div class="logo">
+                <img src="tempLogo.jpg" alt="Livingston's Construction Logo" class="logo-img">
+            </div>
+            <h1>Livingston's Construction</h1>
+
+            <!-- Responsive Menu -->
+            <nav aria-label="Main Navigation">
+                <button class="hamburger-menu" aria-label="Toggle Menu">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Latest Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container" id="hero-content">
+            <div id="top" class="top">
+                <h2>Welcome to Our Business</h2>
+                <p>At Livingston's Construction, we specialize in providing top-notch construction services to meet your needs.</p>
+            </div>
+            <div id="middle" class="middle">
+                <img src="tempProfilePic.jpg" alt="Company Owner" class="profile-pic">
+            </div>
+            <div id="bottom" class="bottom">
+                <a href="#services" class="btn">Explore Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container" id="about-content">
+            <h2>About Us</h2>
+            <p>We are committed to delivering the best service to our clients. Our experienced team ensures quality and excellence in every project.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <img src="images/drywall.jpg" alt="Drywall Installation">
+                    <h3>Drywall Installation</h3>
+                </div>
+                <div class="service-card">
+                    <img src="images/painting.jpg" alt="Painting">
+                    <h3>Painting</h3>
+                </div>
+                <div class="service-card">
+                    <img src="images/framing.jpg" alt="Framing">
+                    <h3>Framing</h3>
+                </div>
+                <div class="service-card">
+                    <img src="images/remodeling.jpg" alt="Remodeling">
+                    <h3>Remodeling</h3>
+                </div>
+                <div class="service-card">
+                    <img src="images/decks.jpg" alt="Decks">
+                    <h3>Decks</h3>
+                </div>
+                <div class="service-card">
+                    <img src="images/tile.jpg" alt="Tile Work">
+                    <h3>Tile Work</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Latest Projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <h3>Home Renovation</h3>
+                    <img src="tempProject1.jpg" alt="Project 1" class="project-img">
+                    <p>Complete renovation including drywall, flooring, and interior painting.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Custom Deck Build</h3>
+                    <img src="tempProject2.jpg" alt="Project 2" class="project-img">
+                    <p>Designed and built a custom outdoor deck for a family home.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Kitchen Remodel</h3>
+                    <img src="tempProject3.jpg" alt="Project 3" class="project-img">
+                    <p>Installed new cabinets, countertops, and tile backsplash.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Office Space Upgrade</h3>
+                    <img src="tempProject4.jpg" alt="Project 4" class="project-img">
+                    <p>Reconfigured and remodeled office space with modern finishes.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Bathroom Renovation</h3>
+                    <img src="tempProject5.jpg" alt="Project 5" class="project-img">
+                    <p>Full bathroom remodel with new tile, fixtures, and lighting.</p>
+                </div>
+            </div>
+            <div class="scroll-buttons">
+                <button class="scroll-left" aria-label="Scroll Left" onclick="scrollProjects(-200)">&#10094;</button>
+                <button class="scroll-right" aria-label="Scroll Right" onclick="scrollProjects(200)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container" id="contact-content">
+            <h2>Contact Us</h2>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="be5de7dd-f2a2-4d2f-a50c-34bf9acb4de4">
+                
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" aria-label="Name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" aria-label="Email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1 (123) 456-7890" aria-label="Phone Number" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" cols="30" aria-label="Message" required></textarea>
+                </div>
+                
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" id="footer-content">
+            <div class="footer-logo">
+                <img src="tempLogo.jpg" alt="Livingston's Construction Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-info">
+                <h3>Livingston's Construction</h3>
+                <p>123 Main Street, Your City, ST 12345</p>
+                <p>Phone: <a href="tel:+11234567890">(573) 291-3487</a></p>
+                <p>Email: <a href="mailto:clivingstonllc@gmail.com">clivingstonllc@gmail.com</a></p>
+            </div>
+            <p class="footer-credit">© 2025 Livingston's Construction. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
